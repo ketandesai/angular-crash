@@ -28,10 +28,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Docker notes
 To get in interactive shell to generate components
+
 docker run, runs a command in a new container
+
 `docker run -it -v $(pwd):/app node:16-alpine bash`
 
 To run commands in a running container
+
 `docker exec -it <container_id> sh`
+
 or 
+
 `docker-compose exec app sh`
