@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Docker notes
+To get in interactive shell to generate components
+docker run, runs a command in a new container
+`docker run -it -v $(pwd):/app node:16-alpine bash`
+
+To run commands in a running container
+`docker exec -it <container_id> sh`
+or 
+`docker-compose exec app sh`
